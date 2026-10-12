@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파티 찾기 - ShareSim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #141414;
+    }
+  </style>
+</head>
+<body class="bg-[#141414] text-white">
+
+  <!-- 네비게이션 -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-[#E50914] font-bold text-2xl tracking-tighter">SHARE<span class="text-white">SIM</span></span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html" class="text-gray-300 hover:text-white transition">홈</a>
+          <a href="parties.html" class="text-white">파티 찾기</a>
+          <a href="create.html" class="text-gray-300 hover:text-white transition">파티 만들기</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition">소개</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="login.html" class="text-sm text-gray-300 hover:text-white transition hidden sm:block">로그인</a>
+          <a href="signup.html" class="bg-[#E50914] hover:bg-[#f40612] text-white text-sm font-medium px-4 py-1.5 rounded transition">
+            회원가입
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 본문 -->
+  <main class="pt-24 pb-16 max-w-6xl mx-auto px-4 sm:px-8">
+    
+    <!-- 헤더 -->
+    <div class="mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-2">가상넷플릭스 파티 찾기</h1>
+      <p class="text-gray-400 text-sm">현재 모집중인 파티를 확인하고 참여하세요</p>
+    </div>
+
+    <!-- 필터 -->
+    <div class="flex flex-wrap gap-3 mb-8">
+      <button class="bg-[#E50914] text-white text-sm px-4 py-1.5 rounded-full">전체</button>
+      <button class="bg-[#333] hover:bg-[#444] text-gray-300 text-sm px-4 py-1.5 rounded-full transition">자리 있음</button>
+      <button class="bg-[#333] hover:bg-[#444] text-gray-300 text-sm px-4 py-1.5 rounded-full transition">1자리 남음</button>
+      <button class="bg-[#333] hover:bg-[#444] text-gray-300 text-sm px-4 py-1.5 rounded-full transition">최신순</button>
+    </div>
+
+    <!-- 파티 리스트 -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <!-- 파티 카드 1 -->
+      <a href="party-detail.html" class="bg-[#181818] rounded-md overflow-hidden hover:bg-[#222] transition border border-[#333] block">
+        <div class="h-28 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+          <span class="text-3xl">🎬</span>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium text-[#E50914]">프리미엄</span>
+            <span class="text-xs text-emerald-400">2/4명</span>
+          </div>
+          <h3 class="font-semibold mb-1">가상넷플릭스 파티 #12</h3>
+          <p class="text-xs text-gray-400 mb-3">월 3,900원 · 남은 기간 28일</p>
+          <div class="text-xs text-gray-500">파티장: user_kim</div>
+        </div>
+      </a>
+
+      <!-- 파티 카드 2 -->
+      <a href="party-detail.html" class="bg-[#181818] rounded-md overflow-hidden hover:bg-[#222] transition border border-[#333] block">
+        <div class="h-28 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+          <span class="text-3xl">🎬</span>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium text-[#E50914]">프리미엄</span>
+            <span class="text-xs text-emerald-400">1/4명</span>
+          </div>
+          <h3 class="font-semibold mb-1">가상넷플릭스 파티 #08</h3>
+          <p class="text-xs text-gray-400 mb-3">월 3,900원 · 남은 기간 15일</p>
+          <div class="text-xs text-gray-500">파티장: park_dev</div>
+        </div>
+      </a>
+
+      <!-- 파티 카드 3 -->
+      <a href="party-detail.html" class="bg-[#181818] rounded-md overflow-hidden hover:bg-[#222] transition border border-[#333] block">
+        <div class="h-28 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+          <span class="text-3xl">🎬</span>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium text-[#E50914]">프리미엄</span>
+            <span class="text-xs text-yellow-400">3/4명</span>
+          </div>
+          <h3 class="font-semibold mb-1">가상넷플릭스 파티 #03</h3>
+          <p class="text-xs text-gray-400 mb-3">월 3,900원 · 남은 기간 7일</p>
+          <div class="text-xs text-gray-500">파티장: lee_secu</div>
+        </div>
+      </a>
+
+      <!-- 파티 카드 4 -->
+      <a href="party-detail.html" class="bg-[#181818] rounded-md overflow-hidden hover:bg-[#222] transition border border-[#333] block">
+        <div class="h-28 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+          <span class="text-3xl">🎬</span>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium text-[#E50914]">프리미엄</span>
+            <span class="text-xs text-emerald-400">0/4명</span>
+          </div>
+          <h3 class="font-semibold mb-1">가상넷플릭스 파티 #19</h3>
+          <p class="text-xs text-gray-400 mb-3">월 3,900원 · 남은 기간 30일</p>
+          <div class="text-xs text-gray-500">파티장: choi_js</div>
+        </div>
+      </a>
+
+      <!-- 파티 카드 5 -->
+      <a href="party-detail.html" class="bg-[#181818] rounded-md overflow-hidden hover:bg-[#222] transition border border-[#333] block">
+        <div class="h-28 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+          <span class="text-3xl">🎬</span>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium text-[#E50914]">프리미엄</span>
+            <span class="text-xs text-red-400">4/4명</span>
+          </div>
+          <h3 class="font-semibold mb-1">가상넷플릭스 파티 #05</h3>
+          <p class="text-xs text-gray-400 mb-3">월 3,900원 · 남은 기간 12일</p>
+          <div class="text-xs text-gray-500">파티장: jung_code · 마감</div>
+        </div>
+      </a>
+
+      <!-- 파티 카드 6 -->
+      <a href="party-detail.html" class="bg-[#181818] rounded-md overflow-hidden hover:bg-[#222] transition border border-[#333] block">
+        <div class="h-28 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+          <span class="text-3xl">🎬</span>
+        </div>
+        <div class="p-4">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-medium text-[#E50914]">프리미엄</span>
+            <span class="text-xs text-emerald-400">2/4명</span>
+          </div>
+          <h3 class="font-semibold mb-1">가상넷플릭스 파티 #21</h3>
+          <p class="text-xs text-gray-400 mb-3">월 3,900원 · 남은 기간 22일</p>
+          <div class="text-xs text-gray-500">파티장: han_secure</div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="border-t border-[#333] bg-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 py-8">
+      <p class="text-gray-600 text-xs">
+        © 2026 ShareSim · 세명컴퓨터고등학교 보안과 · 교육 목적 프로젝트<br>
+        이 사이트는 넷플릭스와 무관하며, 실제 계정 공유를 중개하지 않습니다.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
