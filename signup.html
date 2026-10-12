@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 - ShareSim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #141414; }
+  </style>
+</head>
+<body class="bg-[#141414] text-white min-h-screen flex flex-col">
+
+  <nav class="py-6 px-4 sm:px-8">
+    <a href="index.html" class="text-[#E50914] font-bold text-2xl tracking-tighter">SHARE<span class="text-white">SIM</span></a>
+  </nav>
+
+  <main class="flex-1 flex items-center justify-center px-4 py-8">
+    <div class="w-full max-w-md">
+      <h1 class="text-3xl font-bold mb-2 text-center">회원가입</h1>
+      <p class="text-gray-400 text-sm text-center mb-8">교육용 가상 플랫폼입니다</p>
+
+      <form class="space-y-4">
+        <div>
+          <input type="text" placeholder="닉네임" class="w-full bg-[#333] border border-[#333] rounded px-4 py-3.5 text-white placeholder-gray-400 focus:outline-none focus:border-gray-500">
+        </div>
+        <div>
+          <input type="email" placeholder="이메일" class="w-full bg-[#333] border border-[#333] rounded px-4 py-3.5 text-white placeholder-gray-400 focus:outline-none focus:border-gray-500">
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호" class="w-full bg-[#333] border border-[#333] rounded px-4 py-3.5 text-white placeholder-gray-400 focus:outline-none focus:border-gray-500">
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호 확인" class="w-full bg-[#333] border border-[#333] rounded px-4 py-3.5 text-white placeholder-gray-400 focus:outline-none focus:border-gray-500">
+        </div>
+
+        <div class="flex items-start gap-2 text-sm text-gray-400 pt-2">
+          <input type="checkbox" id="agree" class="mt-1">
+          <label for="agree">교육용 가상 플랫폼임을 이해했으며, 실제 계정/결제가 없음을 확인합니다.</label>
+        </div>
+
+        <button type="submit" class="w-full bg-[#E50914] hover:bg-[#f40612] text-white font-medium py-3.5 rounded transition mt-2">
+          가입하기
+        </button>
+      </form>
+
+      <div class="mt-8 text-center text-sm text-gray-400">
+        이미 계정이 있으신가요? 
+        <a href="login.html" class="text-white hover:underline">로그인</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-6 text-center">
+    <p class="text-gray-600 text-xs">© 2026 ShareSim · 교육 목적 프로젝트</p>
+  </footer>
+</body>
+</html>
