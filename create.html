@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파티 만들기 - ShareSim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #141414; }
+  </style>
+</head>
+<body class="bg-[#141414] text-white">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="text-[#E50914] font-bold text-2xl tracking-tighter">SHARE<span class="text-white">SIM</span></a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="index.html" class="text-gray-300 hover:text-white">홈</a>
+          <a href="parties.html" class="text-gray-300 hover:text-white">파티 찾기</a>
+          <a href="create.html" class="text-white">파티 만들기</a>
+        </div>
+        <a href="login.html" class="text-sm text-gray-300 hover:text-white">로그인</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-24 pb-16 max-w-xl mx-auto px-4 sm:px-8">
+    <h1 class="text-2xl font-bold mb-2">파티 만들기</h1>
+    <p class="text-gray-400 text-sm mb-8">가상넷플릭스 파티를 생성합니다</p>
+
+    <form class="space-y-5">
+      <div>
+        <label class="block text-sm text-gray-400 mb-1.5">파티 이름</label>
+        <input type="text" placeholder="예: 가상넷플릭스 파티 #25" class="w-full bg-[#222] border border-[#333] rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#E50914]">
+      </div>
+
+      <div>
+        <label class="block text-sm text-gray-400 mb-1.5">최대 인원</label>
+        <select class="w-full bg-[#222] border border-[#333] rounded px-4 py-3 text-white focus:outline-none focus:border-[#E50914]">
+          <option>4명 (프리미엄)</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm text-gray-400 mb-1.5">이용 기간</label>
+        <select class="w-full bg-[#222] border border-[#333] rounded px-4 py-3 text-white focus:outline-none focus:border-[#E50914]">
+          <option>30일</option>
+          <option>15일</option>
+          <option>7일</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm text-gray-400 mb-1.5">월 예상 비용 (1인당)</label>
+        <input type="text" value="3,900원" readonly class="w-full bg-[#222] border border-[#333] rounded px-4 py-3 text-gray-400">
+      </div>
+
+      <div>
+        <label class="block text-sm text-gray-400 mb-1.5">파티 설명 (선택)</label>
+        <textarea rows="3" placeholder="간단한 규칙을 적어주세요" class="w-full bg-[#222] border border-[#333] rounded px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-[#E50914]"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-[#E50914] hover:bg-[#f40612] text-white font-medium py-3 rounded transition">
+        파티 생성하기
+      </button>
+      <p class="text-xs text-gray-500 text-center">※ 가상 시뮬레이션입니다. 실제 계정/결제는 없습니다.</p>
+    </form>
+  </main>
+
+  <footer class="border-t border-[#333] bg-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 py-8">
+      <p class="text-gray-600 text-xs">© 2026 ShareSim · 세명컴퓨터고등학교 보안과 · 교육 목적 프로젝트</p>
+    </div>
+  </footer>
+</body>
+</html>
