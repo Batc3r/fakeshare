@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>파티 상세 - ShareSim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #141414; }
+  </style>
+</head>
+<body class="bg-[#141414] text-white">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="text-[#E50914] font-bold text-2xl tracking-tighter">SHARE<span class="text-white">SIM</span></a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="index.html" class="text-gray-300 hover:text-white">홈</a>
+          <a href="parties.html" class="text-gray-300 hover:text-white">파티 찾기</a>
+          <a href="create.html" class="text-gray-300 hover:text-white">파티 만들기</a>
+        </div>
+        <a href="login.html" class="text-sm text-gray-300 hover:text-white">로그인</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-24 pb-16 max-w-3xl mx-auto px-4 sm:px-8">
+    <a href="parties.html" class="text-sm text-gray-400 hover:text-white mb-6 inline-block">← 목록으로</a>
+
+    <div class="bg-[#181818] rounded-lg border border-[#333] overflow-hidden">
+      <div class="h-40 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+        <span class="text-5xl">🎬</span>
+      </div>
+      <div class="p-6">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-xs font-medium text-[#E50914] bg-[#E50914]/10 px-2 py-0.5 rounded">프리미엄</span>
+          <span class="text-xs text-emerald-400">2/4명</span>
+        </div>
+        <h1 class="text-2xl font-bold mb-1">가상넷플릭스 파티 #12</h1>
+        <p class="text-gray-400 text-sm mb-6">파티장: user_kim · 생성일 2026.10.10</p>
+
+        <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+          <div class="bg-[#222] rounded p-3">
+            <p class="text-gray-500 mb-1">월 예상 비용</p>
+            <p class="font-semibold text-lg">3,900원</p>
+          </div>
+          <div class="bg-[#222] rounded p-3">
+            <p class="text-gray-500 mb-1">남은 기간</p>
+            <p class="font-semibold text-lg">28일</p>
+          </div>
+        </div>
+
+        <h3 class="font-semibold mb-3">파티원 현황</h3>
+        <div class="space-y-2 mb-6">
+          <div class="flex items-center justify-between bg-[#222] rounded px-3 py-2 text-sm">
+            <span>user_kim <span class="text-[#E50914] text-xs ml-1">파티장</span></span>
+            <span class="text-gray-500">참여중</span>
+          </div>
+          <div class="flex items-center justify-between bg-[#222] rounded px-3 py-2 text-sm">
+            <span>park_dev</span>
+            <span class="text-gray-500">참여중</span>
+          </div>
+          <div class="flex items-center justify-between bg-[#222] rounded px-3 py-2 text-sm text-gray-500">
+            <span>빈자리</span>
+            <span>대기중</span>
+          </div>
+          <div class="flex items-center justify-between bg-[#222] rounded px-3 py-2 text-sm text-gray-500">
+            <span>빈자리</span>
+            <span>대기중</span>
+          </div>
+        </div>
+
+        <button class="w-full bg-[#E50914] hover:bg-[#f40612] text-white font-medium py-3 rounded transition">
+          이 파티에 참여하기
+        </button>
+        <p class="text-xs text-gray-500 text-center mt-3">※ 가상 포인트로만 정산됩니다. 실제 결제는 없습니다.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-[#333] bg-black">
+    <div class="max-w-6xl mx-auto px-4 sm:px-8 py-8">
+      <p class="text-gray-600 text-xs">© 2026 ShareSim · 세명컴퓨터고등학교 보안과 · 교육 목적 프로젝트</p>
+    </div>
+  </footer>
+</body>
+</html>
